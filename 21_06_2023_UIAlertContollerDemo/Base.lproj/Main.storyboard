@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="_1_06_2023_UIAlertContollerDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" alpha="0.59999999999999998" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lj7-j0-NfN">
+                                <rect key="frame" x="115" y="97" width="160" height="40"/>
+                                <color key="backgroundColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="RuX-Wm-7O1"/>
+                                    <constraint firstAttribute="width" constant="160" id="p2F-VF-MH2"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="SimpleAlert"/>
+                                <connections>
+                                    <action selector="alertButtonClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fKt-ps-Fxh"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" alpha="0.59999999999999998" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PR3-8y-xvH">
+                                <rect key="frame" x="115" y="280" width="160" height="40"/>
+                                <color key="backgroundColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="AlertWithLoginForm"/>
+                                <connections>
+                                    <action selector="alertButtonClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hgx-a9-DrL"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" alpha="0.59999999999999998" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U9F-xD-njQ">
+                                <rect key="frame" x="95" y="370" width="200" height="40"/>
+                                <color key="backgroundColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="kCW-TU-15g"/>
+                                    <constraint firstAttribute="height" constant="40" id="tck-5A-Mib"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="AlertWithMultipleButtons"/>
+                                <connections>
+                                    <action selector="alertButtonClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="y89-dK-7k2"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" alpha="0.59999999999999998" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dhf-uG-4Zu">
+                                <rect key="frame" x="95" y="460" width="200" height="40"/>
+                                <color key="backgroundColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="wNH-BA-Q2A"/>
+                                    <constraint firstAttribute="width" constant="200" id="wkz-cg-XYP"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="StandardActionSheet"/>
+                                <connections>
+                                    <action selector="alertButtonClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="J5u-Cp-77g"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" alpha="0.59999999999999998" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OhL-y6-Fxt">
+                                <rect key="frame" x="115" y="187" width="160" height="40"/>
+                                <color key="backgroundColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="0Hk-zs-lCR"/>
+                                    <constraint firstAttribute="width" constant="160" id="wnp-jG-ePF"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="AlertWithTextField"/>
+                                <connections>
+                                    <action selector="alertButtonClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="mVc-Ug-oSh"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="OhL-y6-Fxt" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="7mb-DS-h7A"/>
+                            <constraint firstItem="OhL-y6-Fxt" firstAttribute="centerX" secondItem="PR3-8y-xvH" secondAttribute="centerX" id="8ot-gW-gHt"/>
+                            <constraint firstItem="Lj7-j0-NfN" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ECK-dU-Tfy"/>
+                            <constraint firstItem="U9F-xD-njQ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="F4i-Gu-lWo"/>
+                            <constraint firstItem="Dhf-uG-4Zu" firstAttribute="top" secondItem="U9F-xD-njQ" secondAttribute="bottom" constant="50" id="LKS-ZK-dt9"/>
+                            <constraint firstItem="OhL-y6-Fxt" firstAttribute="top" secondItem="Lj7-j0-NfN" secondAttribute="bottom" constant="50" id="Maf-kz-AJt"/>
+                            <constraint firstItem="U9F-xD-njQ" firstAttribute="top" secondItem="PR3-8y-xvH" secondAttribute="bottom" constant="50" id="Ubh-Yf-yqt"/>
+                            <constraint firstItem="OhL-y6-Fxt" firstAttribute="width" secondItem="PR3-8y-xvH" secondAttribute="width" id="Wgd-ig-Dfd"/>
+                            <constraint firstItem="Dhf-uG-4Zu" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="YGh-w9-hbO"/>
+                            <constraint firstItem="Lj7-j0-NfN" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="50" id="cnf-s7-Ecz"/>
+                            <constraint firstItem="PR3-8y-xvH" firstAttribute="top" secondItem="OhL-y6-Fxt" secondAttribute="bottom" constant="53" id="dxm-Us-3MW"/>
+                            <constraint firstItem="OhL-y6-Fxt" firstAttribute="height" secondItem="PR3-8y-xvH" secondAttribute="height" id="fQZ-1C-bZU"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="131" y="-28"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
